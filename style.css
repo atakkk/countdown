@@ -1,0 +1,68 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #8360c3, #2ebf91);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.countdown-container {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(8px);
+}
+
+h1 {
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  animation: fadeInDown 1s ease-in-out;
+}
+
+#countdown {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.time-box {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid white;
+  border-radius: 15px;
+  padding: 20px;
+  width: 100px;
+  transition: transform 0.3s ease;
+}
+
+.time-box:hover {
+  transform: scale(1.1);
+}
+
+.time-box span {
+  font-size: 2.5rem;
+  font-weight: bold;
+  display: block;
+}
+
+.time-box p {
+  margin: 5px 0 0;
+  font-size: 1rem;
+}
+
+/* Animasyon */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
